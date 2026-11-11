@@ -15,8 +15,8 @@ def write_dat(dataframe, output_dat): #uses the DF method to write the df in a c
 	dataframe.to_csv(output_dat, sep="\t", header=False, index=False) 
 
 def main():
-	infile = "../MAPS_LIMADOU/bkg_55_2/data.csv"
-	outfile = "../MAPS_LIMADOU/bkg_55_2/data.dat"
+	infile = "bkg_55_2/data.csv"
+	outfile = "bkg_55_2/data.dat"
 	df = csv_to_df(infile)
 	write_dat(df, outfile)
 

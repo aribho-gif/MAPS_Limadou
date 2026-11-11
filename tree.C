@@ -41,14 +41,13 @@ void tree(const string& infile = "provadata.dat"){
     int j=0;
 
     while (in >> ev_id >> chip_id >> hit_x >> hit_y){
-        if(eventNumber =! ev_id){
+        if(eventNumber != ev_id){
             tree->Fill(); //fill the ttree with the TClonesArray previously filled
             hits->Clear(); 
             j=0;
             eventNumber = ev_id;
         }
-        new(hits[j])Punto(chip_id, hit_x, hit_y);
+        new(hits[j])Point(chip_id, hit_x, hit_y);
         j++;
-
     }
 }
