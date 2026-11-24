@@ -15,7 +15,7 @@
 
 using namespace std;
 
-void tree(const string& infile = "provadata.dat"){
+void tree(const string& infile = "bkg_30/data.dat"){
 
     TFile hfile("htree.root","RECREATE"); //file on which the Tree is saved
     TTree *tree = new TTree("T","TTree con 2 branches"); 

@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void usedata(const string& infile = "provadata.dat"){
+void usedata(const string& infile = "bkg_30/data.dat"){
     ifstream in(infile); //open input file
     if(!in){
         cout << "Error: opening input file" << endl;

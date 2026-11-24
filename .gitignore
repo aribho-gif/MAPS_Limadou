@@ -1,3 +1,7 @@
 *:Zone.Identifier
 *.raw
 *.csv
+*.root
+*.dat
+
+
